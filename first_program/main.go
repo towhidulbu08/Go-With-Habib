@@ -2,17 +2,16 @@ package main
 
 import "fmt"
 
+func add(num1 int, num2 int) int {
+	return num1 + num2
+}
+
 func main() {
-	a:=3
+	a := 10
+	b := 20
 
-
-	switch a{
-
-	case 1:
-		fmt.Println("a is 1")
-	case 2, 3:
-		fmt.Println("a is 2 or 3")
-	default:
-		fmt.Println("a is neither 1 nor 2")
-	}
+	sum := add(a, b)
+	additionalSum := add(5, 15)
+	fmt.Println("Sum of a and b is:", sum)
+	fmt.Println("Additional sum is:", additionalSum)
 }
