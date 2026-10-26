@@ -2,14 +2,17 @@ package main
 
 import "fmt"
 
-func main(){
-	 var x int=10
-	 fmt.Println(x)
+func main() {
+	a:=3
 
-	//  a:=true
-	//  a=false
-	//  fmt.Println(a)
 
-	const p=12
-	// p=23
+	switch a{
+
+	case 1:
+		fmt.Println("a is 1")
+	case 2, 3:
+		fmt.Println("a is 2 or 3")
+	default:
+		fmt.Println("a is neither 1 nor 2")
+	}
 }
