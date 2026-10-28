@@ -2,72 +2,26 @@ package main
 
 import "fmt"
 
-func printWelcomeMsg() {
+// import "fmt"
 
-	//Print welcome message
+var (
+	a = 10
+	b = 40
+)
 
-	fmt.Println("Welcome to the application")
+func add(x int, y int) {
 
+	z := x + y
+	fmt.Println(z)
 }
 
-func getUserName() string {
-
-	//Get user name as input
-
-	var name string
-
-	fmt.Println("Enter your name -")
-	fmt.Scanln(&name)
-	return name
-}
-
-func getTwoNumbers() (int, int) {
-
-	var num1 int
-	var num2 int
-	fmt.Println("Enter first Number: ")
-	fmt.Scanln(&num1)
-	fmt.Println("Enter second Number: ")
-	fmt.Scanln(&num2)
-
-	return num1, num2
-}
-
-func add(num1 int, num2 int) int {
-
-	return num1 + num2
-}
-
-func display(name string, sum int) {
-
-	fmt.Println("Hello, ", name)
-	fmt.Println("Summation =", sum)
-
-}
-
-func printGoodBye() {
-
-	fmt.Println("Thank you all")
-	fmt.Println("Allah Hafez")
-
-}
 func main() {
 
-	printWelcomeMsg()
-	name := getUserName()
-	num1, num2 := getTwoNumbers()
+	p := 30
+	q := 40
 
-	sum := add(num1, num2)
-	//Display results
-	display(name, sum)
-	//Print a goodbye message
-	printGoodBye()
+	add(p, q)
+	add(a, b)
+
+	add(b, p)
 }
-
-//* SOLID:
-/*
-
-S =Single Responsibility Principle
-
-
-*/
