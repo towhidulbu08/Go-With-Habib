@@ -2,26 +2,35 @@ package main
 
 import "fmt"
 
-// import "fmt"
-
 var (
 	a = 10
 	b = 40
 )
 
-func add(x int, y int) {
-
-	z := x + y
-	fmt.Println(z)
-}
-
 func main() {
 
-	p := 30
-	q := 40
+	x := 20
 
-	add(p, q)
-	add(a, b)
+	if x >= 18 {
 
-	add(b, p)
+		p := 15
+
+		fmt.Println("I am among The Top 10% Software Engineer In The World")
+		fmt.Println("I've ", p, "friends")
+	}
+
+	fmt.Println("I've ", p, "friends")
+
 }
+
+//* Scople
+/*
+01.Global
+02:Local:
+   i. block(if, function, switch)
+
+03.Package
+
+
+
+*/
