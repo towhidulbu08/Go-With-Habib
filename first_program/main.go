@@ -1,35 +1,23 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
 
-var (
-	a = 10
-	b = 40
+	"example.com/mathlib"
 )
 
+// import "fmt"
+
 func main() {
-
-	x := 20
-
-	if x >= 18 {
-
-		p := 15
-
-		fmt.Println("I am among The Top 10% Software Engineer In The World")
-		fmt.Println("I've ", p, "friends")
-	}
-
-	fmt.Println("I've ", p, "friends")
+	fmt.Println("Showing Custom Package")
+	mathlib.Add(4, 7)
+	// mathlib.Money
 
 }
 
 //* Scople
 /*
-01.Global
-02:Local:
-   i. block(if, function, switch)
-
-03.Package
+Package:
 
 
 
