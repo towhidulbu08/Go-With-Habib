@@ -2,19 +2,13 @@ package main
 
 import "fmt"
 
-var a = 23
+func add(a, b int) {
 
-func main() {
-
-	age := 30
-
-	if age > 18 {
-
-		a := 47
-		fmt.Println(a)
-	}
-
-	fmt.Println(a)
+	fmt.Println(a + b)
 }
 
-//*Shadowing:
+func main() {
+	add(4, 7)
+}
+
+//*Function Types: Standard or named Function
