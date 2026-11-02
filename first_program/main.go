@@ -2,18 +2,23 @@ package main
 
 import "fmt"
 
-var a = 4
+func add(a, b int) {
+
+	fmt.Println(a + b)
+}
 
 func main() {
-	fmt.Println(a) //output:a=20
+	add(5, 6) //* standard or named function
+	func(a, b int) {
+		//* anonymous function
+		//* IIFE(immediately invoked function expression)
+		c := a + b
+		fmt.Println(c)
+	}(5, 5)
+
 }
 
 func init() {
 
-	fmt.Println(a) //output:a=4
-	a = 20
+	fmt.Println("I'll be called first")
 }
-
-//*Function Types: Init function
-
-//NOTE: init function is executed before main function
