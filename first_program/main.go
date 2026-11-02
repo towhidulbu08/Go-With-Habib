@@ -1,24 +1,24 @@
 package main
 
-import (
-	"fmt"
+import "fmt"
 
-	"example.com/mathlib"
+var (
+	a = 10
+	b = 20
 )
 
-// import "fmt"
+func add(a int, b int) {
 
-func main() {
-	fmt.Println("Showing Custom Package")
-	mathlib.Add(4, 7)
-	// mathlib.Money
+	res := a + b
 
+	printNum(res)
 }
 
-//* Scople
-/*
-Package:
+func main() {
+	add(a, b)
+}
 
+func printNum(num int) {
 
-
-*/
+	fmt.Println(num)
+}
