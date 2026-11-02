@@ -2,13 +2,18 @@ package main
 
 import "fmt"
 
-func add(a, b int) {
-
-	fmt.Println(a + b)
-}
+var a = 4
 
 func main() {
-	add(4, 7)
+	fmt.Println(a) //output:a=20
 }
 
-//*Function Types: Standard or named Function
+func init() {
+
+	fmt.Println(a) //output:a=4
+	a = 20
+}
+
+//*Function Types: Init function
+
+//NOTE: init function is executed before main function
