@@ -2,23 +2,19 @@ package main
 
 import "fmt"
 
-var (
-	a = 10
-	b = 20
-)
-
-func add(a int, b int) {
-
-	res := a + b
-
-	printNum(res)
-}
+var a = 23
 
 func main() {
-	add(a, b)
+
+	age := 30
+
+	if age > 18 {
+
+		a := 47
+		fmt.Println(a)
+	}
+
+	fmt.Println(a)
 }
 
-func printNum(num int) {
-
-	fmt.Println(num)
-}
+//*Shadowing:
